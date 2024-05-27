@@ -99,7 +99,7 @@ func gerar_pergunta_operacao():
 	return resultado
 
 func gerar_pergunta_tempo():
-	var tipo = randi_range(1, 3)
+	var tipo = randi_range(1, 2)
 	var pergunta
 	var resposta_correta
 	var opcoes = []
