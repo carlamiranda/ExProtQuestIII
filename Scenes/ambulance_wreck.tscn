@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b78le1m4txeqg"]
+
+[ext_resource type="Script" path="res://Scripts/ambulance_wreck.gd" id="1_0fxl4"]
+[ext_resource type="Texture2D" uid="uid://bsb03tnfpcllk" path="res://Assets/Wreckage/Abandoned/Ambulance/AMBULANCE_Wreck_000.png" id="1_1xyji"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anouh"]
+size = Vector2(145, 67)
+
+[node name="ambulance_wreck" type="StaticBody2D"]
+collision_layer = 2
+script = ExtResource("1_0fxl4")
+metadata/_edit_horizontal_guides_ = [-471.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(471, 260)
+texture = ExtResource("1_1xyji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(469.5, 255.5)
+shape = SubResource("RectangleShape2D_anouh")

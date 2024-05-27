@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciqektntdkwsn"]
+
+[ext_resource type="Texture2D" uid="uid://nh6kckto3tvq" path="res://Assets/Wreckage/Abandoned/Police/POLICE_Wreck_000.png" id="1_x7js2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jdm4q"]
+size = Vector2(96, 56.5)
+
+[node name="police_wreck" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(632, 218)
+texture = ExtResource("1_x7js2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(632, 220.75)
+shape = SubResource("RectangleShape2D_jdm4q")
