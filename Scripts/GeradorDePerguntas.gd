@@ -104,18 +104,12 @@ func gerar_pergunta_tempo():
 	var resposta_correta
 	var opcoes = []
 	if tipo == 1:  # Semanas para Dias
-		var semanas = randi_range(1, 6)
+		var semanas = randi_range(2, 10)
 		var dias = semanas * 7
 		pergunta = str(semanas) + " semanas representa\nquantos dias?"
 		resposta_correta = dias
-	elif tipo == 2:  #Meses para Dias
-		var meses = randi_range(0, 11)
-		var dias_no_mes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]  # Quantidade de dias em cada mês
-		var dias = meses * dias_no_mes[randi_range(0, 11)]
-		pergunta = str(meses) + " meses representa\nquantos dias?"
-		resposta_correta = dias
 	else:
-		var anos = randi_range(1, 5)
+		var anos = randi_range(2, 10)
 		var meses = anos * 12
 		pergunta = str(anos) + " anos possui\nquantos meses?"
 		resposta_correta = meses
